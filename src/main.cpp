@@ -1,47 +1,46 @@
 #include <Arduino.h>
 #include <math.h>
 
-using Pin = uint8_t;
+using Pin = int;
 
-enum class DisplayMode : uint8_t
+enum class DisplayMode
 {
     Dot,
     Bar
 };
 
-constexpr Pin ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-constexpr Pin lowRefPin = A0;
-constexpr Pin highRefPin = A1;
-constexpr Pin signalPin = A2;
-constexpr Pin modePin = 12;
+Pin ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+Pin lowRefPin = A0;
+Pin highRefPin = A1;
+Pin signalPin = A2;
+Pin modePin = 12;
 
 
-
-uint16_t measureReference(Pin lowRefPin, Pin highRefPin)
+int measureReference(Pin lowRefPin, Pin highRefPin)
 {
     return analogRead(highRefPin) - analogRead(lowRefPin);
 }
 
 
-uint16_t measureSignal(Pin signalPin)
+int measureSignal(Pin signalPin)
 {
     return analogRead(signalPin);
 }
 
 
-void initializeDisplay(const Pin* ledPins, uint8_t numLeds = 10)
+void initializeDisplay(const Pin* ledPins, int numLeds = 10)
 {
-    for(uint8_t i = 0; i < numLeds; i++)
+    for(int i = 0; i < numLeds; i++)
     {
         pinMode(ledPins[i], OUTPUT);
     }
 }
 
-void displaySignal(uint16_t signal, uint16_t reference, DisplayMode mode, const Pin* ledPins, uint8_t numLeds = 10)
+void displaySignal(int signal, int reference, DisplayMode mode, const Pin* ledPins, int numLeds = 10)
 {
-    uint16_t ledIndex = lrint(static_cast<double>(signal) / static_cast<double>(reference));
+    int ledIndex = lrint(static_cast<double>(signal) / static_cast<double>(reference));
 
-    for(uint8_t i = 0; i < numLeds; i++)
+    for(int i = 0; i < numLeds; i++)
     {
         digitalWrite(ledPins[i], HIGH);
     }
@@ -49,15 +48,15 @@ void displaySignal(uint16_t signal, uint16_t reference, DisplayMode mode, const 
     switch(mode)
     {
         case DisplayMode::Bar:
-            for(uint8_t i = 0; i < ledIndex; i++)
+            for(int i = 0; i < ledIndex; i++)
             {
                 digitalWrite(ledPins[ledIndex], LOW);
             }
             break;
+    
         case DisplayMode::Dot:
             digitalWrite(ledPins[ledIndex], LOW);
             break;
-
     }
 }
 
@@ -70,8 +69,8 @@ void setup()
 
 void loop()
 {
-    uint16_t signal = measureSignal(signalPin);
-    uint16_t reference = measureReference(lowRefPin, highRefPin);
+    int signal = measureSignal(signalPin);
+    int reference = measureReference(lowRefPin, highRefPin);
     DisplayMode mode = static_cast<DisplayMode>(digitalRead(modePin));
     displaySignal(signal, reference, mode, ledPins);
 }
