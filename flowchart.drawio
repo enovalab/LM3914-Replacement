@@ -1,0 +1,368 @@
+<mxfile host="65bd71144e">
+    <diagram id="O26fbojR48Uf1aAV7sTd" name="Hauptprogramm">
+        <mxGraphModel dx="1480" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="10" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Start" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="361" y="66" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Signal einlesen" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="342.5" y="136" width="117" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="fySVf92yqNZT5_yrwth1-22" style="edgeStyle=none;jumpStyle=arc;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6" target="fySVf92yqNZT5_yrwth1-19" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Referenz einlesen" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="342.5" y="206" width="117" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;" parent="1" source="14" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="LED Position berechnen" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="342.5" y="346" width="117" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;jumpStyle=arc;" parent="1" source="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="401" y="116" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="401" y="496"/>
+                            <mxPoint x="297" y="496"/>
+                            <mxPoint x="297" y="116"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="LED Position ausgeben" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="342" y="416" width="117" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="fySVf92yqNZT5_yrwth1-23" style="edgeStyle=none;jumpStyle=arc;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fySVf92yqNZT5_yrwth1-19" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fySVf92yqNZT5_yrwth1-19" value="Anzeigemodus&lt;br&gt;einlesen" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="342" y="276" width="117" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="450rFVRkJWAVE7fzCITJ" name="Signal einlesen">
+        <mxGraphModel dx="1480" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="enSTSW-jz2sXvOzB7Ztx-1" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="trMbCOTIoYY8dVu6mgae-1" target="dqmxXO2vYlBYbtgE4ImE-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="trMbCOTIoYY8dVu6mgae-1" value="Start" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="65" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="trMbCOTIoYY8dVu6mgae-2" value="Ende" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="220" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="enSTSW-jz2sXvOzB7Ztx-2" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=-15;entryPerimeter=0;" parent="1" source="dqmxXO2vYlBYbtgE4ImE-1" target="trMbCOTIoYY8dVu6mgae-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="dqmxXO2vYlBYbtgE4ImE-1" value="ADC Signal an A2&lt;br&gt;einlesen und zurückgeben" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="130" width="140" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="_Ek9zPpsgkf6VE6edusn" name="Referenz einlesen">
+        <mxGraphModel dx="1480" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="KvHQ7V1Acf3yVv9SnlKU-3" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GqVp5uJhORPxdIj3chC3-1" target="h0gZrjqCItHx2euEInNG-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GqVp5uJhORPxdIj3chC3-1" value="Start" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="80" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="GqVp5uJhORPxdIj3chC3-2" value="Ende" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="380" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="KvHQ7V1Acf3yVv9SnlKU-2" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="h0gZrjqCItHx2euEInNG-1" target="KvHQ7V1Acf3yVv9SnlKU-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="h0gZrjqCItHx2euEInNG-1" value="ADC Signal an A1&lt;br&gt;einlesen" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="140" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="KvHQ7V1Acf3yVv9SnlKU-5" value="" style="edgeStyle=none;html=1;" parent="1" source="KvHQ7V1Acf3yVv9SnlKU-1" target="KvHQ7V1Acf3yVv9SnlKU-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KvHQ7V1Acf3yVv9SnlKU-1" value="ADC Signal an A0&lt;br&gt;einlesen" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="220" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="KvHQ7V1Acf3yVv9SnlKU-6" value="" style="edgeStyle=none;html=1;" parent="1" source="KvHQ7V1Acf3yVv9SnlKU-4" target="GqVp5uJhORPxdIj3chC3-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KvHQ7V1Acf3yVv9SnlKU-4" value="Differenz berechnen und zurückgeben" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="300" width="120" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="wJCQboMeX-dNq0_cqoEP" name="Anzeigemodus einlesen">
+        <mxGraphModel dx="846" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="IbTi_PK05UJWKWHlWVW7-2" value="" style="edgeStyle=none;html=1;" parent="1" source="aPlLClmATX_K--kwQU6Q-1" target="IbTi_PK05UJWKWHlWVW7-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="aPlLClmATX_K--kwQU6Q-1" value="Start" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="140" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="aPlLClmATX_K--kwQU6Q-2" value="Ende" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="280" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="SqwfZAMNWn7-qmeQBMl6-1" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="IbTi_PK05UJWKWHlWVW7-1" target="aPlLClmATX_K--kwQU6Q-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="IbTi_PK05UJWKWHlWVW7-1" value="Pin 9 einlesen und Wert zurückgeben" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="317.5" y="200" width="165" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="XBPcOxajth_M0YE3lk5U" name="LED Position berechnen">
+        <mxGraphModel dx="1480" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-8" value="" style="edgeStyle=none;html=1;" parent="1" source="4iBSOpFGQ1_5AZg9AWhn-1" target="4iBSOpFGQ1_5AZg9AWhn-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-1" value="Start" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="60" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-2" value="Ende" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="470" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-9" value="" style="edgeStyle=none;html=1;" parent="1" source="4iBSOpFGQ1_5AZg9AWhn-3" target="4iBSOpFGQ1_5AZg9AWhn-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-3" value="Quotient aus Signalwert und Referenzwert bilden" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="120" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-10" value="" style="edgeStyle=none;html=1;" parent="1" source="4iBSOpFGQ1_5AZg9AWhn-4" target="4iBSOpFGQ1_5AZg9AWhn-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-4" value="Quotient mit Anzahl der LEDs multiplizieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="210" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-7" value="" style="edgeStyle=none;html=1;" parent="1" source="4iBSOpFGQ1_5AZg9AWhn-5" target="4iBSOpFGQ1_5AZg9AWhn-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-5" value="auf ganze Zahl runden" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-11" value="" style="edgeStyle=none;html=1;" parent="1" source="4iBSOpFGQ1_5AZg9AWhn-6" target="4iBSOpFGQ1_5AZg9AWhn-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4iBSOpFGQ1_5AZg9AWhn-6" value="1 abziehen und&lt;br&gt;Zurückgeben" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="400" width="120" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="JdjiHE0KEyb2ZBgvRoHp" name="LED Position ausgeben">
+        <mxGraphModel dx="1480" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-17" style="edgeStyle=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8uB20kjHihdzwcw-PyJV-1" target="Ujs8S-BIjF6tcbrlZMKm-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8uB20kjHihdzwcw-PyJV-1" value="Start" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="10" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8uB20kjHihdzwcw-PyJV-2" value="Ende" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1310" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-4" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-1" target="Ujs8S-BIjF6tcbrlZMKm-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-7" value="ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ujs8S-BIjF6tcbrlZMKm-4" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3547" y="-1" relative="1" as="geometry">
+                        <mxPoint x="15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Td2UPrfkBwUJELprVeOD-4" value="nein" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-1" target="Td2UPrfkBwUJELprVeOD-1">
+                    <mxGeometry x="-0.9103" y="14" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="520" y="224"/>
+                            <mxPoint x="520" y="480"/>
+                            <mxPoint x="400" y="480"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-1" value="Zählvariable &lt;br&gt;&amp;lt; &lt;br&gt;Anzalhl der LEDs" style="shape=rhombus;html=1;dashed=0;whitespace=wrap;perimeter=rhombusPerimeter;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="179" width="180" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-12" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-2" target="Ujs8S-BIjF6tcbrlZMKm-10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="400" y="470"/>
+                            <mxPoint x="220" y="470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-2" value="Adressierten LED Pin&lt;br&gt;hochohmig schalten" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="389" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-8" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-3" target="Ujs8S-BIjF6tcbrlZMKm-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-3" value="LED Pin an Stelle der Zählvariable&lt;br&gt;im Array adressieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="309" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-16" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="149" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="220" y="149"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-10" value="Zählvariable inkrementieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="164" y="204" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-15" value="" style="edgeStyle=none;html=1;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-14" target="Ujs8S-BIjF6tcbrlZMKm-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-14" value="Zählvariable anlegen und mit 0 initialisieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="333" y="69" width="134" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-24" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-18" target="Ujs8S-BIjF6tcbrlZMKm-23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-40" value="ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ujs8S-BIjF6tcbrlZMKm-24" vertex="1" connectable="0">
+                    <mxGeometry x="-0.296" y="-1" relative="1" as="geometry">
+                        <mxPoint x="11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-41" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-18" target="Ujs8S-BIjF6tcbrlZMKm-42" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="620" y="729" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="640" y="690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-43" value="nein" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ujs8S-BIjF6tcbrlZMKm-41" vertex="1" connectable="0">
+                    <mxGeometry x="-0.8698" y="1" relative="1" as="geometry">
+                        <mxPoint y="11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-18" value="Ist Modus = Balken?" style="shape=rhombus;html=1;dashed=0;whitespace=wrap;perimeter=rhombusPerimeter;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="650" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-33" value="" style="edgeStyle=none;html=1;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-22" target="Ujs8S-BIjF6tcbrlZMKm-32" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-34" value="ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ujs8S-BIjF6tcbrlZMKm-33" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4263" relative="1" as="geometry">
+                        <mxPoint x="14" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-47" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="955" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-48" value="nein" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Ujs8S-BIjF6tcbrlZMKm-47" vertex="1" connectable="0">
+                    <mxGeometry x="-0.7621" y="2" relative="1" as="geometry">
+                        <mxPoint y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-22" value="Zählvariable &lt;br&gt;&amp;lt; &lt;br&gt;LED Position" style="shape=rhombus;html=1;dashed=0;whitespace=wrap;perimeter=rhombusPerimeter;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="910" width="180" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-23" target="Ujs8S-BIjF6tcbrlZMKm-22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-23" value="Zählvariable anlegen und mit 0 initialisieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="333" y="760" width="134" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-36" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-32" target="Ujs8S-BIjF6tcbrlZMKm-35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-32" value="LED Pin an Stelle der Zählvariable&lt;br&gt;im Array adressieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="325" y="1050" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-37" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-35" target="Ujs8S-BIjF6tcbrlZMKm-38" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="979" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="400" y="1210"/>
+                            <mxPoint x="200" y="1210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-35" value="Adressierten LED Pin&lt;br&gt;auf OUTPUT setzen &lt;br&gt;und auf LOW schalten" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="1120" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-39" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-38" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="840" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="200" y="840"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-38" value="Zählvariable inkrementieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="145" y="935" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-45" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-42" target="Ujs8S-BIjF6tcbrlZMKm-44" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-42" value="LED Pin an Stelle der Zählvariable&lt;br&gt;im Array adressieren" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="750" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-46" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=-15;entryPerimeter=0;" parent="1" source="Ujs8S-BIjF6tcbrlZMKm-44" target="8uB20kjHihdzwcw-PyJV-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="639.689655172414" y="1269" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="640" y="1240"/>
+                            <mxPoint x="400" y="1240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Ujs8S-BIjF6tcbrlZMKm-44" value="Adressierten LED Pin&lt;br&gt;auf OUTPUT setzen &lt;br&gt;und auf LOW schalten" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="830" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Td2UPrfkBwUJELprVeOD-2" value="nein" style="edgeStyle=none;html=1;" edge="1" parent="1" source="Td2UPrfkBwUJELprVeOD-1" target="Ujs8S-BIjF6tcbrlZMKm-18">
+                    <mxGeometry x="-0.2" y="20" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Td2UPrfkBwUJELprVeOD-6" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Td2UPrfkBwUJELprVeOD-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="1310" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="120" y="560"/>
+                            <mxPoint x="120" y="1240"/>
+                            <mxPoint x="400" y="1240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Td2UPrfkBwUJELprVeOD-7" value="ja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Td2UPrfkBwUJELprVeOD-6">
+                    <mxGeometry x="-0.9678" y="1" relative="1" as="geometry">
+                        <mxPoint y="9" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Td2UPrfkBwUJELprVeOD-1" value="LED Position &amp;lt; 0?" style="shape=rhombus;html=1;dashed=0;whitespace=wrap;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="520" width="180" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
