@@ -13,7 +13,7 @@ constexpr Pin modePin = 12;
 
 uint16_t measureReference(Pin lowRefPin, Pin highRefPin)
 {
-    uint16_t reference = analogRead(highRefPin) - analogRead(lowRefPin);
+    int16_t reference = analogRead(highRefPin) - analogRead(lowRefPin);
     if(reference < 0)
         reference = 0;
     return reference;
@@ -26,15 +26,6 @@ uint16_t measureSignal(Pin signalPin)
 }
 
 
-void initializeDisplay(const Pin* ledPins, uint8_t numLeds)
-{
-    for(uint8_t i = 0; i < numLeds; i++)
-    {
-        pinMode(ledPins[i], OUTPUT);
-    }
-}
-
-
 bool readMode(Pin modePin)
 {
     return digitalRead(modePin);
@@ -43,16 +34,17 @@ bool readMode(Pin modePin)
 
 int16_t calculateLedIndex(uint16_t signal, uint16_t reference, uint8_t numLeds)
 {
-    return lrint(static_cast<float>(signal) * numLeds / reference ) - 1;
+    int16_t ledIndex = lrint(static_cast<float>(signal) * numLeds / reference) - 1;
+    if(ledIndex >= numLeds)
+        ledIndex = numLeds - 1;
+    return ledIndex;
 }
 
 
-void displaySignal(int16_t ledIndex, bool barMode, const Pin* ledPins, uint8_t numLeds)
+void displaySignal(int16_t ledIndex, bool barMode, const Pin ledPins[], uint8_t numLeds)
 {
     for(uint8_t i = 0; i < numLeds; i++)
-    {
         pinMode(ledPins[i], INPUT);
-    }
 
     if(ledIndex < 0)
         return;
